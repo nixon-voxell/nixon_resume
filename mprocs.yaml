@@ -1,0 +1,3 @@
+procs:
+  watch resume:
+    shell: "typst watch resume.typ --font-path assets\\fonts\\"

@@ -1,44 +1,6 @@
-# Typst Resume Template
+# Nixon's Resume
 
-A simple resume template for [typst.app](https://typst.app/).
-
-Aesthetic style inspired by the following project:
-
-- [Awesome-CV](https://github.com/posquit0/Awesome-CV)
-
-- [LaTeX Resume](https://github.com/billryan/resume)
-
-This is not a perfect clone, the main purpose of this project is to explore and experiment with Typst's typography features.
-
-## [Sample](./resume.pdf)
-
-![awesome-sample](./assets/image/awesome-sample.png)
-
-![latex-sample](./assets/image/latex-sample.png)
-
-## Development Environment
-
-- Install [Typst](https://github.com/typst/typst)
-
-- Install [Just](https://github.com/casey/just)
-
-## Build Resume
-
-```bash
-just build
-```
-
-## Interactive Development Resume
-
-```bash
-just dev
-```
-
-## Containerized Build
-
-```bash
-just containerized-build
-```
+This repository is where Nixon stores his resume. This way, Nixon will be able to keep track of all his resume versions and changes.
 
 ## Credit
 
