@@ -35,7 +35,18 @@
 }
 
 #let resume(author: (), date: "", body) = {
-  
+  let generate_contact(icon, contact, url: "") = {
+    align(horizon)[
+      #if url != "" {
+        box()[#link(url)[#contact]]
+      } else {
+        contact
+      }
+      #h(10pt)
+      #icon
+    ]
+  }
+
   set document(
     author: author.firstname + " " + author.lastname, 
     title: "resume",
@@ -80,11 +91,12 @@
   )
   
   let name = {
-    align(center)[
+    align(left)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 32pt, style: "normal", font: ("Roboto"))
+          #set text(size: 24pt, style: "normal", font: ("Roboto"))
           #text(weight: "thin")[#author.firstname]
+          #linebreak()
           #text(weight: "bold")[#author.lastname]
         ]
       ]
@@ -96,7 +108,7 @@
       size: 9pt,
       weight: "regular"
     )
-    align(center)[
+    align(left)[
       #smallcaps[
         #author.positions.join(
           text[#"  "#sym.dot.c#"  "]
@@ -107,37 +119,32 @@
 
   let contacts = {
     set box(height: 11pt)
-    
-    let linkedin_icon = box(image("assets/icons/linkedin.svg"))
-    let github_icon = box(image("assets/icons/square-github.svg"))
-    let email_icon = box(image("assets/icons/square-envelope-solid.svg"))
-    let phone_icon = box(image("assets/icons/square-phone-solid.svg"))
-    let separator = box(width: 5pt)
-    
-    align(center)[
-      #block[
-        #align(horizon)[
-          #phone_icon
-          #box[#text(author.phone)]
-          #separator
-          #email_icon
-          #box[#link("mailto:" + author.email)[#author.email]]
-          #separator
-          #github_icon
-          #box[#link("https://github.com/" + author.github)[#author.github]]
-          #separator
-          #linkedin_icon
-          #box[
-            #link("https://www.linkedin.com/in/" + author.linkedin)[#author.linkedin]
-          ]
-        ]
-      ]
-    ] 
+
+    let height = 18pt;
+    let email_icon = box(image("assets/icons/square-envelope-solid.svg", height: height))
+    let phone_icon = box(image("assets/icons/square-phone-solid.svg", height: height))
+    let github_icon = box(image("assets/icons/square-github.svg", height: height))
+    let linkedin_icon = box(image("assets/icons/linkedin.svg", height: height))
+
+    align(right)[
+      #generate_contact(email_icon, author.email, url: "mailto:" + author.email)
+      #generate_contact(phone_icon, author.phone)
+      #generate_contact(github_icon, author.github, url: "https://github.com/" + author.github)
+      #generate_contact(linkedin_icon, author.linkedin, url: "https://linkedin.com/in/" + author.linkedin)
+    ]
   }
 
-  name
-  positions
-  contacts
+  align(left)[
+    #box(radius: 6pt, clip: true)[#image("assets/images/me.jpg", height: 80pt)]
+    #h(10pt)
+    #box[
+      #name
+      #positions
+    ]
+    #h(1fr)
+    #box[#contacts]
+  ]
+
   body
 }
 
@@ -216,32 +223,30 @@
 }
 
 #let work_experience_item_header(
+  position,
   company,
   location,
-  position,
   time_frame
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
   pad[
     #justify_align[
-      #resume_organization[#company]
+      #resume_organization[#position]
     ][
       #resume_location[#location]
     ]
     #justify_align[
-      #resume_position[#position]
+      #resume_position[#company]
     ][
       #resume_time[#time_frame]
     ]
   ]
 }
 
-#let personal_project_item_header(
+#let project_item_header(
   name,
-  location,
-  position,
-  start_time,
+  url,
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
@@ -249,12 +254,22 @@
     #justify_align[
       #resume_organization[#name]
     ][
-      #resume_location[#location]
+      #text(style: "italic", size: 8pt)[#link(url)]
     ]
+  ]
+}
+
+#let award_item_header(
+  name,
+  time,
+) = {
+  set block(above: 0.7em, below: 0.7em)
+  set pad(top: 5pt)
+  pad[
     #justify_align[
-      #resume_position[#position]
+      #resume_organization[#name]
     ][
-      #resume_time[#start_time]
+      #resume_time[#time]
     ]
   ]
 }
