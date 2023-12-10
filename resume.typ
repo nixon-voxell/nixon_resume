@@ -14,7 +14,7 @@
     youtube: "@voxelltech",
     soundcloud: "voxalmusic",
     positions: (
-      "Computer Grpahics Engineer",
+      "Computer Graphics Engineer",
       // "Game Developer",
     ),
   ),
@@ -28,6 +28,9 @@
   (
     "Rust",
     "C#",
+    "WGSL",
+    "HLSL",
+    "GLSL",
     "Python",
     "Typescript",
     "C++",
