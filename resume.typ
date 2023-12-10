@@ -9,7 +9,7 @@
     loc: "Malaysia",
     linkedin: "nixonyh",
     github: "nixon-voxell",
-    url_name: "Linktree",
+    url_name: "linktr.ee/voxell",
     url: "https://linktr.ee/voxell",
     youtube: "@voxelltech",
     soundcloud: "voxalmusic",
@@ -110,6 +110,16 @@
   #resume_gpa("3.95", "4.00")
 ][
   Aug. 2022 - Present
+]
+
+#education_item[
+  Asia Pacific University of Technology & Innovation (APU)
+][
+  Diploma in Information & Communication Technology with a Specialism in Software Engineering
+][
+  #resume_gpa("3.95", "4.00")
+][
+  Jun. 2020 - Jul. 2022
 ]
 
 #resume_section("Projects")
