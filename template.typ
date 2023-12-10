@@ -34,19 +34,18 @@
   ]
 }
 
-#let resume(author: (), date: "", body) = {
-  let generate_contact(icon, contact, url: "") = {
-    align(horizon)[
-      #if url != "" {
-        box()[#link(url)[#contact]]
-      } else {
-        contact
-      }
-      #h(10pt)
-      #icon
-    ]
-  }
+#let generate_contact(icon, contact, url: "") = {
+  block[
+    #icon
+    #if url != "" {
+      link(url)[#contact]
+    } else {
+      contact
+    }
+  ]
+}
 
+#let resume(author: (), date: "", body) = {
   set document(
     author: author.firstname + " " + author.lastname, 
     title: "resume",
@@ -94,7 +93,7 @@
     align(left)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 24pt, style: "normal", font: ("Roboto"))
+          #set text(size: 20pt, style: "normal", font: ("Roboto"))
           #text(weight: "thin")[#author.firstname]
           #linebreak()
           #text(weight: "bold")[#author.lastname]
@@ -117,32 +116,51 @@
     ]
   }
 
-  let contacts = {
+  let contacts0 = {
     set box(height: 11pt)
 
-    let height = 18pt;
-    let email_icon = box(image("assets/icons/square-envelope-solid.svg", height: height))
-    let phone_icon = box(image("assets/icons/square-phone-solid.svg", height: height))
-    let github_icon = box(image("assets/icons/square-github.svg", height: height))
-    let linkedin_icon = box(image("assets/icons/linkedin.svg", height: height))
+    let email_icon = box(image("assets/icons/mail.svg"))
+    let phone_icon = box(image("assets/icons/phone.svg"))
+    let location_icon = box(image("assets/icons/location.svg"))
+    let linkedin_icon = box(image("assets/icons/linkedin.svg"))
 
-    align(right)[
+    align(left)[
       #generate_contact(email_icon, author.email, url: "mailto:" + author.email)
       #generate_contact(phone_icon, author.phone)
-      #generate_contact(github_icon, author.github, url: "https://github.com/" + author.github)
+      #generate_contact(location_icon, author.loc)
       #generate_contact(linkedin_icon, author.linkedin, url: "https://linkedin.com/in/" + author.linkedin)
     ]
   }
 
+  let contacts1 = {
+    set box(height: 11pt)
+
+    let url_icon = box(image("assets/icons/url.svg"))
+    let github_icon = box(image("assets/icons/github.svg"))
+    let youtube_icon = box(image("assets/icons/youtube.svg"))
+    let soundcloud_icon = box(image("assets/icons/soundcloud.svg"))
+
+    align(left)[
+      #generate_contact(url_icon, author.url_name, url: author.url)
+      #generate_contact(github_icon, author.github, url: "https://github.com/" + author.github)
+      #generate_contact(youtube_icon, author.youtube, url: "https://youtube.com/" + author.youtube)
+      #generate_contact(soundcloud_icon, author.soundcloud, url: "https://soundcloud.com/" + author.soundcloud)
+    ]
+  }
+
   align(left)[
-    #box(radius: 6pt, clip: true)[#image("assets/images/me.jpg", height: 80pt)]
-    #h(10pt)
     #box[
-      #name
-      #positions
+      #box(radius: 6pt, clip: true)[#image("assets/images/me.jpg", height: 80pt)]
+      #h(8pt)
+      #box[
+        #name
+        #positions
+      ]
     ]
     #h(1fr)
-    #box[#contacts]
+    #box[#contacts0]
+    #h(1fr)
+    #box[#contacts1]
   ]
 
   body
@@ -152,12 +170,15 @@
 #let resume_section(title) = {
   set text(
     size: 16pt,
-    weight: "regular"
+    weight: "regular",
+    fill: white
   )
   align(left)[
-    #smallcaps[
-      // #text[#title.slice(0, 3)]#strong[#text[#title.slice(3)]]
-      #strong[#text[#title]]
+    #box(fill: black, inset: 4pt)[
+      #smallcaps[
+        // #text[#title.slice(0, 3)]#strong[#text[#title.slice(3)]]
+        #strong[#text[#title]]
+      ]
     ]
     #box(width: 1fr, line(length: 100%))
   ]
@@ -271,6 +292,18 @@
     ][
       #resume_time[#time]
     ]
+  ]
+}
+
+#let item_and_link(
+  name,
+  url,
+) = {
+  set block(above: 0.7em, below: 0.7em)
+  set pad(top: 5pt)
+  pad[
+    #resume_organization[#name]
+    #resume_item[- #link(url)]
   ]
 }
 

@@ -2,16 +2,21 @@
 
 #show: resume.with(
   author: (
-      firstname: "(Nixon) Yi Heng", 
-      lastname: "Cheng",
-      email: "voxell.technologies@gmail.com", 
-      phone: "(+60) 173389100",
-      github: "nixon-voxell",
-      linkedin: "nixonyh",
-      positions: (
-        "Computer Grpahics Engineer",
-        "Game Developer",
-      ),
+    firstname: "(Nixon) Yi Heng", 
+    lastname: "Cheng",
+    email: "voxell.technologies@gmail.com", 
+    phone: "(+60) 173389100",
+    loc: "Malaysia",
+    linkedin: "nixonyh",
+    github: "nixon-voxell",
+    url_name: "Linktree",
+    url: "https://linktr.ee/voxell",
+    youtube: "@voxelltech",
+    soundcloud: "voxalmusic",
+    positions: (
+      "Computer Grpahics Engineer",
+      // "Game Developer",
+    ),
   ),
   date: datetime.today().display("[day] [month repr:long] [year]")
 )
@@ -40,8 +45,9 @@
     "Animation",
     "Motion Graphics",
     "Graphics Programming",
+    "Deep Learning",
     "VFX",
-    "Bevy",
+    "Bevy Engine",
     "Unity3D",
     "Unreal Engine",
   )
@@ -55,7 +61,6 @@
   "London, UK",
   "Sep. 2020 - Present",
 )
-
 #resume_item[
   - Develop GPU accelerated cloth simulation engine.
   - Tools & pipeline for cloth/softbody authoring.
@@ -67,7 +72,6 @@
   "KL, Malaysia",
   "Feb. 2023 - April. 2024",
 )
-
 #resume_item[
   - Organize and manage events for the club.
 ]
@@ -78,7 +82,6 @@
   "Remote",
   "Jun. 2020 - Aug. 2023",
 )
-
 #resume_item[
   - Work on vaiours client projects.
 ]
@@ -89,7 +92,6 @@
   "KL, Malaysia",
   "May. 2022 - Aug. 2022",
 )
-
 #resume_item[
   - Develop Blender addon tools for artists.
   - Contributed to Bake n Switch project.
@@ -113,7 +115,6 @@
   "Bevy MotionGfx",
   "https://github.com/nixon-voxell/bevy_motiongfx",
 )
-
 #resume_item[
   - Motion graphics creation tool in Bevy. (Highly inspired by Motion Canvas and Manim)
 ]
@@ -122,7 +123,6 @@
   "Bevy Vello Renderer",
   "https://github.com/nixon-voxell/bevy_vello_renderer",
 )
-
 #resume_item[
   - A minimal integration for rendering Vello graphics in Bevy.
 ]
@@ -131,7 +131,6 @@
   "Unity TTS",
   "https://github.com/voxell-tech/UnityTTS",
 )
-
 #resume_item[
   - Text to speech in Unity.
 ]
@@ -140,7 +139,6 @@
   "Unity NLP",
   "https://github.com/voxell-tech/UnityNLP",
 )
-
 #resume_item[
   - Natural language processing in Unity.
 ]
@@ -149,19 +147,18 @@
   "Unity Audio Visualizer",
   "https://github.com/voxell-tech/UnityAudioVisualizer",
 )
-
 #resume_item[
   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
 ]
 
 #resume_section("Awards")
+
 Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "2023 4th All American DAVINCI International Innovation and Invention Expo",
   "Sep. 2023"
 )
-
 #resume_item[
   - Gold Medal
   - ATIP Special Award
@@ -173,7 +170,6 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "DB-SNUbiz Global Startup Challenge 2023",
   "Sep. 2023"
 )
-
 #resume_item[
   - Finalist
 ]
@@ -182,7 +178,6 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "2023 INNOVERSE Innovation & Invention Expo",
   "Aug. 2023"
 )
-
 #resume_item[
   - Gold Medal
   - INNOPA Special Award
@@ -193,7 +188,6 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "The 12th World Invention Creativity Olympic 2023",
   "Jul. 2023"
 )
-
 #resume_item[
   - Gold Award
   - TISIAS Special Award
@@ -204,7 +198,6 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "Virtual Innovation Competition 2023",
   "Jun. 2023"
 )
-
 #resume_item[
   - Gold Medal
 ]
@@ -213,7 +206,6 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "34th International Invention, Innovation & Technology Exhibition",
   "May. 2023"
 )
-
 #resume_item[
   - Silver Medal
 ]
@@ -222,11 +214,24 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   "Hilti IT Competition 2023",
   "May. 2023"
 )
-
 #resume_item[
   - Semi-Finalist
 ]
 
 #resume_section("Talks")
 
+#item_and_link("Beauty of Shaders Talk (APUGDC)", "https://www.instagram.com/p/CtfxIu0vD3k/?img_index=2")
 
+#item_and_link("TEDx - Simulating Millions of Particles in a Digital Twin (BATxAPU Week)", "https://twitter.com/AsiaPacificU/status/1534062323346083840")
+
+#resume_section("Media & Press Releases")
+
+#item_and_link("The Star (Rescue AI - Gold Medal @ Invention Innovation Competition in Canada 2023)", "https://www.thestar.com.my/starpicks/2023/11/16/next-gen-game-development-for-next-gen-professionals")
+
+#item_and_link("Open Gov (Rescue AI - Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://opengovasia.com/rescueai-smart-city-disaster-management/")
+
+#item_and_link("APU News (Rescue AI - Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://www.apu.edu.my/media/news/2939")
+
+#item_and_link("APU News (1st Runner Up @ Intel AI Global Impact Festival 2023, 3rd Runner Up @ Petronas CHESS Symposium 2023)", "https://www.apu.edu.my/media/news/2911")
+
+#item_and_link("APU News (Silver Medal @ ITEX 2023)", "https://www.apu.edu.my/media/news/2869")
