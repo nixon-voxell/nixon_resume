@@ -117,7 +117,7 @@
 ][
   Diploma in Information & Communication Technology with a Specialism in Software Engineering
 ][
-  #resume_gpa("3.95", "4.00")
+  #resume_gpa("3.80", "4.00")
 ][
   Jun. 2020 - Jul. 2022
 ]
