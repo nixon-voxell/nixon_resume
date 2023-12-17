@@ -15,13 +15,13 @@
     soundcloud: "voxalmusic",
     positions: (
       "Computer Graphics Engineer",
-      // "Game Developer",
+      "\nTechnical Artist",
     ),
   ),
   date: datetime.today().display("[day] [month repr:long] [year]")
 )
 
-#resume_section("Skills")
+#resume_section[Skills]
 
 #skill_item(
   "Programming\nLanguages",
@@ -48,6 +48,7 @@
     "Animation",
     "Motion Graphics",
     "Graphics Programming",
+    "Parallel/Multithreading",
     "Deep Learning",
     "VFX",
     "Bevy Engine",
@@ -56,7 +57,7 @@
   )
 )
 
-#resume_section("Experience")
+#resume_section[Experience]
 
 #work_experience_item_header(
   "Physics Simulation Engineer",
@@ -100,7 +101,7 @@
   - Contributed to Bake n Switch project.
 ]
 
-#resume_section("Education")
+#resume_section[Education]
 
 #education_item[
   Asia Pacific University of Technology & Innovation (APU)
@@ -122,7 +123,7 @@
   Jun. 2020 - Jul. 2022
 ]
 
-#resume_section("Projects")
+#resume_section[Open Source Projects]
 
 #project_item_header(
   "Bevy MotionGfx",
@@ -137,7 +138,7 @@
   "https://github.com/nixon-voxell/bevy_vello_renderer",
 )
 #resume_item[
-  - A minimal integration for rendering Vello graphics in Bevy.
+  - A minimal integration for rendering vector graphics using Vello in Bevy.
 ]
 
 #project_item_header(
@@ -164,7 +165,7 @@
   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
 ]
 
-#resume_section("Awards")
+#resume_section[Awards]
 
 Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
@@ -231,20 +232,29 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
   - Semi-Finalist
 ]
 
-#resume_section("Talks")
+#resume_section[Talks]
 
 #item_and_link("Beauty of Shaders Talk (APUGDC)", "https://www.instagram.com/p/CtfxIu0vD3k/?img_index=2")
 
 #item_and_link("TEDx - Simulating Millions of Particles in a Digital Twin (BATxAPU Week)", "https://twitter.com/AsiaPacificU/status/1534062323346083840")
 
-#resume_section("Media & Press Releases")
+#resume_section[Media & Press Releases]
 
-#item_and_link("The Star (Rescue AI - Gold Medal @ Invention Innovation Competition in Canada 2023)", "https://www.thestar.com.my/starpicks/2023/11/16/next-gen-game-development-for-next-gen-professionals")
+#item_and_link("The Star (Gold Medal @ Invention Innovation Competition in Canada 2023)", "https://www.thestar.com.my/starpicks/2023/11/16/next-gen-game-development-for-next-gen-professionals")
 
-#item_and_link("Open Gov (Rescue AI - Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://opengovasia.com/rescueai-smart-city-disaster-management/")
+#item_and_link("Open Gov (Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://opengovasia.com/rescueai-smart-city-disaster-management/")
 
-#item_and_link("APU News (Rescue AI - Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://www.apu.edu.my/media/news/2939")
+#item_and_link("APU News (Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://www.apu.edu.my/media/news/2939")
 
 #item_and_link("APU News (1st Runner Up @ Intel AI Global Impact Festival 2023, 3rd Runner Up @ Petronas CHESS Symposium 2023)", "https://www.apu.edu.my/media/news/2911")
 
 #item_and_link("APU News (Silver Medal @ ITEX 2023)", "https://www.apu.edu.my/media/news/2869")
+
+// #pagebreak()
+
+// #resume_section[Skill Experiences]
+
+// #skill_item(
+//   "Unity 3D",
+//   ("Familiar with ECS, Scriptable Render Pipelines, Job System, and shaders (including compute shaders).",)
+// )
