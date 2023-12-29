@@ -143,7 +143,7 @@
 
 #project_item_header(
   "Unity TTS",
-  "https://github.com/voxell-tech/UnityTTS",
+  "https://github.com/nixon-voxell/UnityTTS",
 )
 #resume_item[
   - Text to speech in Unity.
@@ -151,7 +151,7 @@
 
 #project_item_header(
   "Unity NLP",
-  "https://github.com/voxell-tech/UnityNLP",
+  "https://github.com/nixon-voxell/UnityNLP",
 )
 #resume_item[
   - Natural language processing in Unity.
@@ -159,7 +159,7 @@
 
 #project_item_header(
   "Unity Audio Visualizer",
-  "https://github.com/voxell-tech/UnityAudioVisualizer",
+  "https://github.com/nixon-voxell/UnityAudioVisualizer",
 )
 #resume_item[
   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
