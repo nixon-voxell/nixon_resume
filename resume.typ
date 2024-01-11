@@ -12,7 +12,7 @@
     url_name: "linktr.ee/voxell",
     url: "https://linktr.ee/voxell",
     youtube: "@voxelltech",
-    soundcloud: "voxalmusic",
+    itchio: "nixon-voxell",
     positions: (
       "Computer Graphics Engineer",
       "\nTechnical Artist",

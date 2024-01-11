@@ -138,13 +138,13 @@
     let url_icon = box(image("assets/icons/url.svg"))
     let github_icon = box(image("assets/icons/github.svg"))
     let youtube_icon = box(image("assets/icons/youtube.svg"))
-    let soundcloud_icon = box(image("assets/icons/soundcloud.svg"))
+    let itchio_icon = box(image("assets/icons/itchio.svg"))
 
     align(left)[
       #generate_contact(url_icon, author.url_name, url: author.url)
       #generate_contact(github_icon, author.github, url: "https://github.com/" + author.github)
       #generate_contact(youtube_icon, author.youtube, url: "https://youtube.com/" + author.youtube)
-      #generate_contact(soundcloud_icon, author.soundcloud, url: "https://soundcloud.com/" + author.soundcloud)
+      #generate_contact(itchio_icon, author.itchio, url: "https://itch.io/profile/" + author.itchio)
     ]
   }
 
