@@ -47,16 +47,16 @@
 
 #let resume(author: (), date: "", body) = {
   set document(
-    author: author.firstname + " " + author.lastname, 
+    author: author.firstname + " " + author.lastname,
     title: "resume",
   )
-  
+
   set text(
     font: ("Source Sans Pro"),
     lang: "en",
     size: 11pt,
     fill: color_darknight,
-    fallback: false
+    fallback: false,
   )
 
   set page(
@@ -79,7 +79,7 @@
     ],
     footer-descent: 0pt,
   )
-  
+
   // set paragraph spacing
   show par: set block(above: 0.75em, below: 0.75em)
   set par(justify: true)
@@ -88,7 +88,7 @@
     numbering: none,
     outlined: false,
   )
-  
+
   let name = {
     align(left)[
       #pad(bottom: 5pt)[
@@ -105,12 +105,12 @@
   let positions = {
     set text(
       size: 9pt,
-      weight: "regular"
+      weight: "regular",
     )
     align(left)[
       #smallcaps[
         #author.positions.join(
-          text[#"  "#sym.dot.c#"  "]
+          text[#"  "#sym.dot.c#"  "],
         )
       ]
     ]
@@ -128,7 +128,11 @@
       #generate_contact(email_icon, author.email, url: "mailto:" + author.email)
       #generate_contact(phone_icon, author.phone)
       #generate_contact(location_icon, author.loc)
-      #generate_contact(linkedin_icon, author.linkedin, url: "https://linkedin.com/in/" + author.linkedin)
+      #generate_contact(
+        linkedin_icon,
+        author.linkedin,
+        url: "https://linkedin.com/in/" + author.linkedin,
+      )
     ]
   }
 
@@ -142,15 +146,30 @@
 
     align(left)[
       #generate_contact(url_icon, author.url_name, url: author.url)
-      #generate_contact(github_icon, author.github, url: "https://github.com/" + author.github)
-      #generate_contact(youtube_icon, author.youtube, url: "https://youtube.com/" + author.youtube)
-      #generate_contact(itchio_icon, author.itchio, url: "https://itch.io/profile/" + author.itchio)
+      #generate_contact(
+        github_icon,
+        author.github,
+        url: "https://github.com/" + author.github,
+      )
+      #generate_contact(
+        youtube_icon,
+        author.youtube,
+        url: "https://youtube.com/" + author.youtube,
+      )
+      #generate_contact(
+        itchio_icon,
+        author.itchio,
+        url: "https://itch.io/profile/" + author.itchio,
+      )
     ]
   }
 
   align(left)[
     #box[
-      #box(radius: 6pt, clip: true)[#image("assets/images/me.jpg", height: 80pt)]
+      #box(radius: 6pt, clip: true)[#image(
+          "assets/images/me.jpg",
+          height: 80pt,
+        )]
       #h(8pt)
       #box[
         #name
@@ -171,7 +190,7 @@
   set text(
     size: 16pt,
     weight: "regular",
-    fill: white
+    fill: white,
   )
   align(left)[
     #box(fill: black, inset: 4pt)[
@@ -247,7 +266,7 @@
   position,
   company,
   location,
-  time_frame
+  time_frame,
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
@@ -309,7 +328,7 @@
 
 #let skill_item(category, items) = {
   set block(above: 1.0em, below: 1.0em)
-  
+
   grid(
     columns: (18fr, 80fr),
     gutter: 10pt,

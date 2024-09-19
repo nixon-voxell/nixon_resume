@@ -2,9 +2,9 @@
 
 #show: resume.with(
   author: (
-    firstname: "(Nixon) Yi Heng", 
+    firstname: "(Nixon) Yi Heng",
     lastname: "Cheng",
-    email: "voxell.technologies@gmail.com", 
+    email: "voxell.technologies@gmail.com",
     phone: "(+60) 173389100",
     loc: "Malaysia",
     linkedin: "nixonyh",
@@ -18,7 +18,7 @@
       "\nTechnical Artist",
     ),
   ),
-  date: datetime.today().display("[day] [month repr:long] [year]")
+  date: datetime.today().display("[day] [month repr:long] [year]"),
 )
 
 #resume_section[Skills]
@@ -38,7 +38,7 @@
     "Java",
     "PHP",
     "R",
-  )
+  ),
 )
 
 #skill_item(
@@ -54,7 +54,7 @@
     "Bevy Engine",
     "Unity3D",
     "Unreal Engine",
-  )
+  ),
 )
 
 #resume_section[Experience]
@@ -62,12 +62,24 @@
 #work_experience_item_header(
   "Physics Simulation Engineer",
   "23 Bulbs",
-  "London, UK",
+  "UK",
   "Sep. 2020 - Present",
 )
 #resume_item[
   - Develop GPU accelerated cloth simulation engine.
   - Tools & pipeline for cloth/softbody authoring.
+]
+
+#work_experience_item_header(
+  "Animation Programmer Intern",
+  "Hedra",
+  "US",
+  "Mar. 2024 - Jul. 2024",
+)
+#resume_item[
+  - Create animation systems for generating keyframe animations that can be imported and exported.
+  - Deal with different types of animation e.g. character rig, blend poses, flame poses, transform, etc.
+  - All in the Bevy game engine using Rust.
 ]
 
 #work_experience_item_header(
@@ -171,7 +183,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "2023 4th All American DAVINCI International Innovation and Invention Expo",
-  "Sep. 2023"
+  "Sep. 2023",
 )
 #resume_item[
   - Gold Medal
@@ -182,7 +194,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "DB-SNUbiz Global Startup Challenge 2023",
-  "Sep. 2023"
+  "Sep. 2023",
 )
 #resume_item[
   - Finalist
@@ -190,7 +202,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "2023 INNOVERSE Innovation & Invention Expo",
-  "Aug. 2023"
+  "Aug. 2023",
 )
 #resume_item[
   - Gold Medal
@@ -200,7 +212,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "The 12th World Invention Creativity Olympic 2023",
-  "Jul. 2023"
+  "Jul. 2023",
 )
 #resume_item[
   - Gold Award
@@ -210,7 +222,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "Virtual Innovation Competition 2023",
-  "Jun. 2023"
+  "Jun. 2023",
 )
 #resume_item[
   - Gold Medal
@@ -218,7 +230,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "34th International Invention, Innovation & Technology Exhibition",
-  "May. 2023"
+  "May. 2023",
 )
 #resume_item[
   - Silver Medal
@@ -226,7 +238,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #award_item_header(
   "Hilti IT Competition 2023",
-  "May. 2023"
+  "May. 2023",
 )
 #resume_item[
   - Semi-Finalist
@@ -234,21 +246,42 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 
 #resume_section[Talks]
 
-#item_and_link("Beauty of Shaders Talk (APUGDC)", "https://www.instagram.com/p/CtfxIu0vD3k/?img_index=2")
+#item_and_link(
+  "Beauty of Shaders Talk (APUGDC)",
+  "https://www.instagram.com/p/CtfxIu0vD3k/?img_index=2",
+)
 
-#item_and_link("TEDx - Simulating Millions of Particles in a Digital Twin (BATxAPU Week)", "https://twitter.com/AsiaPacificU/status/1534062323346083840")
+#item_and_link(
+  "TEDx - Simulating Millions of Particles in a Digital Twin (BATxAPU Week)",
+  "https://twitter.com/AsiaPacificU/status/1534062323346083840",
+)
 
 #resume_section[Media & Press Releases]
 
-#item_and_link("The Star (Gold Medal @ Invention Innovation Competition in Canada 2023)", "https://www.thestar.com.my/starpicks/2023/11/16/next-gen-game-development-for-next-gen-professionals")
+#item_and_link(
+  "The Star (Gold Medal @ Invention Innovation Competition in Canada 2023)",
+  "https://www.thestar.com.my/starpicks/2023/11/16/next-gen-game-development-for-next-gen-professionals",
+)
 
-#item_and_link("Open Gov (Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://opengovasia.com/rescueai-smart-city-disaster-management/")
+#item_and_link(
+  "Open Gov (Gold Medal @ 12th World Invention Creativity Olympic 2023)",
+  "https://opengovasia.com/rescueai-smart-city-disaster-management/",
+)
 
-#item_and_link("APU News (Gold Medal @ 12th World Invention Creativity Olympic 2023)", "https://www.apu.edu.my/media/news/2939")
+#item_and_link(
+  "APU News (Gold Medal @ 12th World Invention Creativity Olympic 2023)",
+  "https://www.apu.edu.my/media/news/2939",
+)
 
-#item_and_link("APU News (1st Runner Up @ Intel AI Global Impact Festival 2023, 3rd Runner Up @ Petronas CHESS Symposium 2023)", "https://www.apu.edu.my/media/news/2911")
+#item_and_link(
+  "APU News (1st Runner Up @ Intel AI Global Impact Festival 2023, 3rd Runner Up @ Petronas CHESS Symposium 2023)",
+  "https://www.apu.edu.my/media/news/2911",
+)
 
-#item_and_link("APU News (Silver Medal @ ITEX 2023)", "https://www.apu.edu.my/media/news/2869")
+#item_and_link(
+  "APU News (Silver Medal @ ITEX 2023)",
+  "https://www.apu.edu.my/media/news/2869",
+)
 
 // #pagebreak()
 
