@@ -24,7 +24,7 @@
 #resume_section[Skills]
 
 #skill_item(
-  "Programming\nLanguages",
+  "Languages",
   (
     "Rust",
     "C#",
@@ -60,8 +60,18 @@
 #resume_section[Experience]
 
 #work_experience_item_header(
-  "Physics Simulation Engineer",
+  "Rust Malaysia",
+  "Co-Host",
+  "Malaysia",
+  "Nov. 2023 - Present",
+)
+#resume_item[
+  - Co-host of Rust Malaysia. Help organize events, give talks, mentor, etc.
+]
+
+#work_experience_item_header(
   "23 Bulbs",
+  "Physics Simulation Engineer",
   "UK",
   "Sep. 2020 - Present",
 )
@@ -71,8 +81,8 @@
 ]
 
 #work_experience_item_header(
-  "Animation Programmer Intern",
   "Hedra",
+  "Animation Programmer Intern",
   "US",
   "Mar. 2024 - Jul. 2024",
 )
@@ -83,8 +93,8 @@
 ]
 
 #work_experience_item_header(
-  "Head of Events",
   "APU Game Development Club",
+  "Head of Events",
   "KL, Malaysia",
   "Feb. 2023 - April. 2024",
 )
@@ -93,8 +103,8 @@
 ]
 
 #work_experience_item_header(
-  "Graphics Programmer",
   "Fiverr",
+  "Graphics Programmer",
   "Remote",
   "Jun. 2020 - Aug. 2023",
 )
@@ -103,8 +113,8 @@
 ]
 
 #work_experience_item_header(
-  "Intern Game Programmer",
   "Streamline Studios",
+  "Intern Game Programmer",
   "KL, Malaysia",
   "May. 2022 - Aug. 2022",
 )
@@ -137,49 +147,81 @@
 
 #resume_section[Open Source Projects]
 
-#project_item_header(
-  "Bevy MotionGfx",
-  "https://github.com/nixon-voxell/bevy_motiongfx",
-)
-#resume_item[
-  - Motion graphics creation tool in Bevy. (Highly inspired by Motion Canvas and Manim)
+For a whole list of projects, head to #link("https://github.com/nixon-voxell")[#underline[_My GitHub profile_]] or #link("https://github.com/voxell-tech")[#underline[_Voxell GitHub profile_]] to have a look.
+
+#box[
+  #project_item_header(
+    "Lumina",
+    "https://github.com/nixon-voxell/lumina",
+  )
+  #resume_item[
+    A top down, fast paced, objective based, PvP game, written in Rust, using the Bevy game engine.
+  ]
 ]
 
-#project_item_header(
-  "Bevy Vello Renderer",
-  "https://github.com/nixon-voxell/bevy_vello_renderer",
-)
-#resume_item[
-  - A minimal integration for rendering vector graphics using Vello in Bevy.
+#box[
+  #project_item_header(
+    "Bevy MotionGfx",
+    "https://github.com/voxell-tech/bevy_motiongfx",
+  )
+  #resume_item[
+    Motion graphics creation tool in Bevy. (Highly inspired by Motion Canvas and Manim)
+  ]
 ]
 
-#project_item_header(
-  "Unity TTS",
-  "https://github.com/nixon-voxell/UnityTTS",
-)
-#resume_item[
-  - Text to speech in Unity.
+#box[
+  #project_item_header(
+    "Velyst",
+    "https://github.com/voxell-tech/velyst",
+  )
+  #resume_item[
+    Interactive Typst content creator using Vello and Bevy.
+  ]
 ]
 
-#project_item_header(
-  "Unity NLP",
-  "https://github.com/nixon-voxell/UnityNLP",
-)
-#resume_item[
-  - Natural language processing in Unity.
-]
+// #project_item_header(
+//   "Bevy Vello Renderer",
+//   "https://github.com/nixon-voxell/bevy_vello_renderer",
+// )
+// #resume_item[
+//   - A minimal integration for rendering vector graphics using Vello in Bevy.
+// ]
 
-#project_item_header(
-  "Unity Audio Visualizer",
-  "https://github.com/nixon-voxell/UnityAudioVisualizer",
-)
-#resume_item[
-  - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
-]
+// #project_item_header(
+//   "Unity TTS",
+//   "https://github.com/nixon-voxell/UnityTTS",
+// )
+// #resume_item[
+//   - Text to speech in Unity.
+// ]
+
+// #project_item_header(
+//   "Unity NLP",
+//   "https://github.com/nixon-voxell/UnityNLP",
+// )
+// #resume_item[
+//   - Natural language processing in Unity.
+// ]
+
+// #project_item_header(
+//   "Unity Audio Visualizer",
+//   "https://github.com/nixon-voxell/UnityAudioVisualizer",
+// )
+// #resume_item[
+//   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
+// ]
 
 #resume_section[Awards]
 
 Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
+
+#award_item_header(
+  "MDEC PDTI Outstanding Student Category 2023",
+  "Mar. 2024",
+)
+#resume_item[
+  - 1st Place
+]
 
 #award_item_header(
   "2023 4th All American DAVINCI International Innovation and Invention Expo",
@@ -247,6 +289,11 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 #resume_section[Talks]
 
 #item_and_link(
+  "Parallel Programming",
+  "https://www.linkedin.com/posts/nixonyh_rust-parallel-programming-talkworkshop-april-activity-7187841746981019649-T45N/",
+)
+
+#item_and_link(
   "Beauty of Shaders Talk (APUGDC)",
   "https://www.instagram.com/p/CtfxIu0vD3k/?img_index=2",
 )
@@ -257,6 +304,11 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 )
 
 #resume_section[Media & Press Releases]
+
+#item_and_link(
+  "The Star (MDEC PDTI Outstanding Student Category 2023)",
+  "https://www.thestar.com.my/news/education/2024/04/28/record-five-mdec-awards-for-apu",
+)
 
 #item_and_link(
   "The Star (Gold Medal @ Invention Innovation Competition in Canada 2023)",

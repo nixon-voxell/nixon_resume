@@ -52,7 +52,7 @@
   )
 
   set text(
-    font: ("Source Sans Pro"),
+    font: "Source Sans Pro",
     lang: "en",
     size: 11pt,
     fill: color_darknight,
@@ -62,7 +62,7 @@
   set page(
     paper: "a4",
     margin: (left: 15mm, right: 15mm, top: 10mm, bottom: 10mm),
-    footer: [
+    footer: context [
       #set text(fill: gray, size: 8pt)
       #justify_align_3[
         #smallcaps[#date]
@@ -80,9 +80,7 @@
     footer-descent: 0pt,
   )
 
-  // set paragraph spacing
-  show par: set block(above: 0.75em, below: 0.75em)
-  set par(justify: true)
+  set par(justify: true, spacing: 0.75em)
 
   set heading(
     numbering: none,
@@ -93,7 +91,7 @@
     align(left)[
       #pad(bottom: 5pt)[
         #block[
-          #set text(size: 20pt, style: "normal", font: ("Roboto"))
+          #set text(size: 20pt, style: "normal", font: "Roboto")
           #text(weight: "thin")[#author.firstname]
           #linebreak()
           #text(weight: "bold")[#author.lastname]
@@ -109,9 +107,7 @@
     )
     align(left)[
       #smallcaps[
-        #author.positions.join(
-          text[#"  "#sym.dot.c#"  "],
-        )
+        #author.positions.join(text[#"  "#sym.dot.c#"  "])
       ]
     ]
   }
@@ -320,9 +316,17 @@
 ) = {
   set block(above: 0.7em, below: 0.7em)
   set pad(top: 5pt)
+  let max_len = 100
+  let url_len = url.len()
+  let ending = if url_len > max_len {
+    [...]
+  } else { [] }
+
   pad[
     #resume_organization[#name]
-    #resume_item[- #link(url)]
+    #resume_item[
+      - #link(url)[#url.slice(0, calc.min(max_len, url_len)) #ending]
+    ]
   ]
 }
 
