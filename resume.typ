@@ -147,7 +147,9 @@
 
 #resume_section[Open Source Projects]
 
-For a whole list of projects, head to #link("https://github.com/nixon-voxell")[#underline[_My GitHub profile_]] or #link("https://github.com/voxell-tech")[#underline[_Voxell GitHub profile_]] to have a look.
+For a whole list of projects, head to #underline[#link("https://github.com/nixon-voxell")] (my GitHub profile) or
+#underline[#link("https://github.com/voxell-tech")] (Voxell GitHub profile) to have a look!\
+For a whole list of all my games, head on to #underline[#link("https://nixon-voxell.itch.io/")] for a look!
 
 #box[
   #project_item_header(
@@ -179,6 +181,24 @@ For a whole list of projects, head to #link("https://github.com/nixon-voxell")[#
   ]
 ]
 
+#box[
+  #project_item_header(
+    "Boom Boom",
+    "https://github.com/nixon-voxell/boomboom",
+  )
+  #resume_item[
+    A survival bombing game developed entirely using Unity DOTS.
+  ]
+]
+
+#project_item_header(
+  "Bevy Motion Matching",
+  "https://github.com/kahboon0425/bevy_motion_matching",
+)
+#resume_item[
+  - A machine learning based motion matching animation system.
+]
+
 // #project_item_header(
 //   "Bevy Vello Renderer",
 //   "https://github.com/nixon-voxell/bevy_vello_renderer",
@@ -193,14 +213,6 @@ For a whole list of projects, head to #link("https://github.com/nixon-voxell")[#
 // )
 // #resume_item[
 //   - Text to speech in Unity.
-// ]
-
-// #project_item_header(
-//   "Unity NLP",
-//   "https://github.com/nixon-voxell/UnityNLP",
-// )
-// #resume_item[
-//   - Natural language processing in Unity.
 // ]
 
 // #project_item_header(
