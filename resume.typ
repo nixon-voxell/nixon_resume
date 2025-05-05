@@ -109,7 +109,7 @@
   "Jun. 2020 - Aug. 2023",
 )
 #resume_item[
-  - Work on vaiours client projects.
+  - Work on various client projects.
 ]
 
 #work_experience_item_header(
@@ -123,33 +123,7 @@
   - Contributed to Bake n Switch project.
 ]
 
-#resume_section[Education]
-
-#education_item[
-  Asia Pacific University of Technology & Innovation (APU)
-][
-  Bachelor of Science (Honours) in Computer Games Development
-][
-  #resume_gpa("3.95", "4.00")
-][
-  Aug. 2022 - Present
-]
-
-#education_item[
-  Asia Pacific University of Technology & Innovation (APU)
-][
-  Diploma in Information & Communication Technology with a Specialism in Software Engineering
-][
-  #resume_gpa("3.80", "4.00")
-][
-  Jun. 2020 - Jul. 2022
-]
-
 #resume_section[Open Source Projects]
-
-For a whole list of projects, head to #underline[#link("https://github.com/nixon-voxell")] (my GitHub profile) or
-#underline[#link("https://github.com/voxell-tech")] (Voxell GitHub profile) to have a look!\
-For a whole list of all my games, head on to #underline[#link("https://nixon-voxell.itch.io/")] for a look!
 
 #box[
   #project_item_header(
@@ -196,7 +170,7 @@ For a whole list of all my games, head on to #underline[#link("https://nixon-vox
   "https://github.com/kahboon0425/bevy_motion_matching",
 )
 #resume_item[
-  - A machine learning based motion matching animation system.
+  A machine learning based motion matching animation system.
 ]
 
 // #project_item_header(
@@ -222,6 +196,34 @@ For a whole list of all my games, head on to #underline[#link("https://nixon-vox
 // #resume_item[
 //   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
 // ]
+
+#box[
+  For a whole list of projects, head to #underline[#link("https://github.com/nixon-voxell")] (my GitHub profile) or
+  #underline[#link("https://github.com/voxell-tech")] (Voxell GitHub profile) to have a look!\
+  For a whole list of all my games, head on to #underline[#link("https://nixon-voxell.itch.io/")] for a look!
+]
+
+#resume_section[Education]
+
+#education_item[
+  Asia Pacific University of Technology & Innovation (APU)
+][
+  Bachelor of Science (Honours) in Computer Games Development
+][
+  #resume_gpa("3.95", "4.00")
+][
+  Aug. 2022 - Present
+]
+
+#education_item[
+  Asia Pacific University of Technology & Innovation (APU)
+][
+  Diploma in Information & Communication Technology with a Specialism in Software Engineering
+][
+  #resume_gpa("3.80", "4.00")
+][
+  Jun. 2020 - Jul. 2022
+]
 
 #resume_section[Awards]
 
@@ -301,7 +303,7 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 #resume_section[Talks]
 
 #item_and_link(
-  "Parallel Programming",
+  "Parallel Programming (Rust Malaysia)",
   "https://www.linkedin.com/posts/nixonyh_rust-parallel-programming-talkworkshop-april-activity-7187841746981019649-T45N/",
 )
 
