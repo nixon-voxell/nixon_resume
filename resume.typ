@@ -4,7 +4,7 @@
   author: (
     firstname: "(Nixon) Yi Heng",
     lastname: "Cheng",
-    email: "voxell.technologies@gmail.com",
+    email: "nixonyh06@gmail.com",
     phone: "(+60) 173389100",
     loc: "Malaysia",
     linkedin: "nixonyh",
@@ -335,18 +335,23 @@ Certificates: #link("https://www.linkedin.com/in/nixonyh/details/honors/")
 )
 
 #item_and_link(
+  "APU News (MDEC PDTI Outstanding Student Category 2023)",
+  "https://www.apu.edu.my/news/winning-habit-continues-apu",
+)
+
+#item_and_link(
   "APU News (Gold Medal @ 12th World Invention Creativity Olympic 2023)",
-  "https://www.apu.edu.my/media/news/2939",
+  "https://www.apu.edu.my/news/disaster-management-ai-powered-drone-wins-gold-medal-wico-2023",
 )
 
 #item_and_link(
   "APU News (1st Runner Up @ Intel AI Global Impact Festival 2023, 3rd Runner Up @ Petronas CHESS Symposium 2023)",
-  "https://www.apu.edu.my/media/news/2911",
+  "https://www.apu.edu.my/news/11-awards-prestigious-research-and-innovation-competitions-apu-students-staff",
 )
 
 #item_and_link(
   "APU News (Silver Medal @ ITEX 2023)",
-  "https://www.apu.edu.my/media/news/2869",
+  "https://www.apu.edu.my/news/apu-researchers-and-staff-received-7-awards-innovation-itex-23",
 )
 
 // #pagebreak()
