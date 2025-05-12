@@ -165,14 +165,25 @@
   ]
 ]
 
-#project_item_header(
-  "Bevy Motion Matching",
-  "https://github.com/kahboon0425/bevy_motion_matching",
-)
-#resume_item[
-  A machine learning based motion matching animation system.
+#box[
+  #project_item_header(
+    "Bevy Motion Matching",
+    "https://github.com/kahboon0425/bevy_motion_matching",
+  )
+  #resume_item[
+    A machine learning based motion matching animation system.
+  ]
 ]
 
+#box[
+  #project_item_header(
+    "Omni Twin",
+    "https://github.com/nixon-voxell/omnitwin",
+  )
+  #resume_item[
+    A digital twin made in Unity for disaster awareness and prediction with custom GPU accelerated flood simulation system.
+  ]
+]
 // #project_item_header(
 //   "Bevy Vello Renderer",
 //   "https://github.com/nixon-voxell/bevy_vello_renderer",
@@ -197,6 +208,7 @@
 //   - Audio visualizer in Unity using Job System, Burst Compiler, and VFX Graph.
 // ]
 
+\
 #box[
   For a whole list of projects, head to #underline[#link("https://github.com/nixon-voxell")] (my GitHub profile) or
   #underline[#link("https://github.com/voxell-tech")] (Voxell GitHub profile) to have a look!\
