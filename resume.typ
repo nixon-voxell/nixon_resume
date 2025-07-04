@@ -23,41 +23,45 @@
 
 #resume_section[Skills]
 
-#skill_item(
-  "Languages",
-  (
-    "Rust",
-    "C#",
-    "WGSL",
-    "HLSL",
-    "GLSL",
-    "Python",
-    "Typescript",
-    "C++",
-    "Dart",
-    "Java",
-    "PHP",
-    "R",
-  ),
-)
+#skill_item("Languages", (
+  "Rust",
+  "C#",
+  "WGSL",
+  "HLSL",
+  "GLSL",
+  "Python",
+  "Typescript",
+  "C++",
+  "Dart",
+  "Java",
+  "PHP",
+  "R",
+))
 
-#skill_item(
-  "Expertise",
-  (
-    "Real-time Physics Simulation",
-    "Animation",
-    "Motion Graphics",
-    "Graphics Programming",
-    "Parallel/Multithreading",
-    "Deep Learning",
-    "VFX",
-    "Bevy Engine",
-    "Unity3D",
-    "Unreal Engine",
-  ),
-)
+#skill_item("Expertise", (
+  "Real-time Physics Simulation",
+  "Animation",
+  "Motion Graphics",
+  "Graphics Programming",
+  "Parallel/Multithreading",
+  "Deep Learning",
+  "VFX",
+  "Bevy Engine",
+  "Unity3D",
+  "Unreal Engine",
+))
 
 #resume_section[Experience]
+
+#work_experience_item_header(
+  "Configura",
+  "Software Engineer",
+  "Malaysia",
+  "July. 2025 - Present",
+)
+#resume_item[
+  - Develop UI framework using flecs, masonry and vello.
+]
 
 #work_experience_item_header(
   "Rust Malaysia",
@@ -71,18 +75,19 @@
 
 #work_experience_item_header(
   "23 Bulbs",
-  "Physics Simulation Engineer",
+  "Computer Graphics Engineer",
   "UK",
   "Sep. 2020 - Present",
 )
 #resume_item[
-  - Develop GPU accelerated cloth simulation engine.
-  - Tools & pipeline for cloth/softbody authoring.
+  - Develop GPU accelerated softbody physics engine.
+  - Tools & pipeline for softbody authoring.
+  - Craft beautiful visuals with custom rendering pipelines, shaders, etc.
 ]
 
 #work_experience_item_header(
   "Hedra",
-  "Animation Programmer Intern",
+  "Apprentice Software Engineer",
   "US",
   "Mar. 2024 - Jul. 2024",
 )
@@ -131,17 +136,18 @@
     "https://github.com/nixon-voxell/lumina",
   )
   #resume_item[
-    A top down, fast paced, objective based, PvP game, written in Rust, using the Bevy game engine.
+    A top down, fast paced, objective based, PvP game, written in Rust, using the Bevy game engine,
+    with custom global illumination solution and a fully vector graphics rendered UI.
   ]
 ]
 
 #box[
   #project_item_header(
-    "Bevy MotionGfx",
-    "https://github.com/voxell-tech/bevy_motiongfx",
+    "MotionGfx",
+    "https://github.com/voxell-tech/motiongfx",
   )
   #resume_item[
-    Motion graphics creation tool in Bevy. (Highly inspired by Motion Canvas and Manim)
+    Procedural motion graphics creation tool made using Bevy. (Highly inspired by Motion Canvas and Manim)
   ]
 ]
 
@@ -151,7 +157,7 @@
     "https://github.com/voxell-tech/velyst",
   )
   #resume_item[
-    Interactive Typst content creator using Vello and Bevy.
+    Interactive vector-based Typst content creator using Vello and Bevy.
   ]
 ]
 
