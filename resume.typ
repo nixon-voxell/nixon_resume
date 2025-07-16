@@ -55,12 +55,12 @@
 
 #work_experience_item_header(
   "Configura",
-  "Software Engineer",
+  "R&D Software Engineer",
   "Malaysia",
   "July. 2025 - Present",
 )
 #resume_item[
-  - Develop UI framework using flecs, masonry and vello.
+  - Develop the next generation of CET using flecs, masonry and vello.
 ]
 
 #work_experience_item_header(
